@@ -1,0 +1,76 @@
+.loginpage{
+  display: flex;
+}
+.login{
+  flex:0.3;
+}
+.message{
+  color:darkred;
+  margin-top:5%;
+}
+.top{
+  background-color: #09c;
+  width:100%;
+  height:100px;
+  display: flex;
+}
+
+.log{
+  
+    text-align: center;
+	font-size: 2em;
+	font-style: normal;
+	color: #d64830;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+* {
+box-sizing: border-box;
+}
+
+
+md-card{
+width:80%;
+font-family: 'Times New Roman', Times, serif;
+margin-left:15%;
+padding: 40px;
+margin-top: 20%;
+border-top: 20px solid #d64830 ;  
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: cadetblue;
+    border-color: #c53e27;
+}
+
+.btn {
+    display: inline-block;
+    padding: 5px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+form {
+text-align: center;
+}
+
+.login-link {
+  font-size: 15px;
+  color: blue;
+  display: block;
+	margin-top: 12px;
+  cursor: pointer;
+}
+

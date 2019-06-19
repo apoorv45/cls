@@ -1,0 +1,39 @@
+<div>
+  <div align="center" style="margin-top:10px">
+  </div>
+  <div class="col-lg-7 col-md-7 col-sm-12 col-sm-12">
+    <img class="img-responsive" src="/assets/img/slideshow1.jpg" />
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+    <div *ngIf="alert" class="alert alert-danger">
+      {{message}}
+    </div>
+    <div>
+      <h1 style="color: #E47911;font-size: 120%;font-weight: normal;text-align:center;font-family:Arial, Helvetica, sans-serif;font-weight:bold">
+        Login To sps</h1>
+    </div>
+    <form (ngSubmit)="login()">
+      <div>
+        <section>
+          <md-input-container>
+            <input mdInput placeholder="Username" required [(ngModel)]="cred.userName" name="userName" id="userName">
+          </md-input-container>
+        </section>
+        <section>
+          <md-input-container>
+            <input mdInput type="password" placeholder="Password" required [(ngModel)]="cred.password" name="password" id="password">
+          </md-input-container>
+        </section>
+        <br>
+        <section>
+          <button class="col-lg-12" md-raised-button style="color:white;background-color:#d64830; margin-left:10px;"> 
+            <span *ngIf="loading==false">Login</span> 
+            <md-spinner *ngIf="loading" style=" float:right;margin-top:5%;margin-bottom:5%; margin-right:50%;width: 24px; height: 24px;"></md-spinner>
+          </button>
+          <br><br>
+          <a style="cursor:pointer;text-decoration:none;color:black;float:right;" (click)="forgotPassword()"> <i>forgot your password? </i> </a>
+        </section>
+      </div>
+    </form>
+  </div>
+</div>
